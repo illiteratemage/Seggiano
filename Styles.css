@@ -1,16 +1,58 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2b2349;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for centering form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+thead, tbody, tfoot {
+    display: contents;
+}
+
+thead tr {
+    background-color: #2b2349;
+    color: white;
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
     text-align: left;
 }
 
@@ -18,31 +60,39 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-th {
-    background-color: #2b2349;
-    color: white;
-}
-
-label {
+/* Style for subheaders */
+.subheader {
+    font-size: 1.2em;
     font-weight: bold;
-    display: block;
-    margin-top: 10px;
+    text-align: center;
+    grid-column: span 7;
+    background-color: #e0e0e0;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
 }
 
-input[type="text"], input[type="tel"], input[type="number"] {
-    padding: 5px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    table {
+        grid-template-columns: repeat(3, 1fr); /* Compress into fewer columns */
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .subheader {
+        grid-column: span 3;
+    }
 }
 
 .order-btn {
     background-color: #2b2349;
     color: white;
-    padding: 10px 20px;
+    padding: 15px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .order-btn:hover {
