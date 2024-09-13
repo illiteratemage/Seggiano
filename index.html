@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 style="color: #2b2349;">Product Order Form</h1>
-    <form id="orderForm">
-        <table>
-            <thead>
-                <tr>
-                    <th>Product Code</th>
-                    <th>Product Description</th>
-                    <th>Units per Case</th>
-                    <th>VAT</th>
-                    <th>Unit Price</th>
-                    <th>Order Quantity</th>
-                    <th>Total Cost</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td colspan='7' style='text-align:center; font-weight:bold;'>OILS & VINEGARS</td></tr>
-
-        <tr>
-            <td>1o1o/500</td>
+    <div class="form-container">
+        <form id="orderForm">
+            <h1>Product Order Form</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Code</th>
+                        <th>Product Description</th>
+                        <th>Units per Case</th>
+                        <th>VAT</th>
+                        <th>Unit Price</th>
+                        <th>Order Quantity</th>
+                        <th>Total Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7" class="subheader">OILS & VINEGARS</td>
+                    </tr>
+                    <tr>
+                        <td>1o1o/500</td>
             <td>Lunaio Organic Italian Extra Virgin Olive Oil 500ml</td>
             <td>12</td>
             <td>0%</td>
@@ -1917,16 +1919,17 @@
             <tfoot>
                 <tr>
                     <td colspan="5">Grand Total</td>
-                    <td colspan="2" id="grandTotal">£0.00</td>
-                </tr>
-                <tr>
-                    <td colspan="5">Case Count Total</td>
-                    <td colspan="2" id="caseCountTotal">0</td>
-                </tr>
-            </tfoot>
-        </table>
-        <input type="submit" value="Submit Order" class="order-btn">
-    </form>
+                        <td colspan="2" id="grandTotal">£0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Case Count Total</td>
+                        <td colspan="2" id="caseCountTotal">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <input type="submit" value="Submit Order" class="order-btn">
+        </form>
+    </div>
     <script src="order.js"></script>
 </body>
 </html>
