@@ -15,17 +15,17 @@
                 <thead>
                     <tr>
                         <th>Product Code</th>
-                        <th>Product Description</th>
-                        <th>Units per Case</th>
-                        <th>VAT</th>
+                        <th>Product</th>
                         <th>Unit Price</th>
+                        <th>VAT</th>
+                        <th>Units Per Case</th>
                         <th>Order Quantity</th>
                         <th>Total Cost</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td colspan="7" class="subheader">OILS & VINEGARS</td>
+                    <tr style="background-color: #D4CBB5;">
+                        <td colspan="7" style="text-align: center;"><strong>OIL & VINEGAR</strong></td>
                     </tr>
                     <tr>
                         <td>1o1o/500</td>
@@ -1921,15 +1921,47 @@
                     <td colspan="5">Grand Total</td>
                         <td colspan="2" id="grandTotal">£0.00</td>
                     </tr>
-                    <tr>
-                        <td colspan="5">Case Count Total</td>
-                        <td colspan="2" id="caseCountTotal">0</td>
-                    </tr>
                 </tfoot>
             </table>
-            <input type="submit" value="Submit Order" class="order-btn">
         </form>
     </div>
-    <script src="order.js"></script>
+
+    <!-- The JavaScript should be placed here after all HTML content is loaded -->
+    <script>
+        // Make sure the script runs after the content is fully loaded
+        window.onload = function () {
+            document.getElementById("orderForm").addEventListener("input", function () {
+                let grandTotal = 0;
+
+                // Loop through each product row
+                document.querySelectorAll("tbody tr").forEach((row) => {
+                    const qtyInput = row.querySelector('input[type="number"]');
+                    const totalCell = row.querySelectorAll('td')[6]; // Total Cost column is the 7th column (index 6)
+
+                    // Only calculate total for rows that contain quantity inputs and total cell
+                    if (qtyInput && totalCell) {
+                        const qty = parseInt(qtyInput.value) || 0;
+
+                        // Extract the price, VAT, and units per case from the row
+                        const price = parseFloat(row.children[2].innerText.replace('£', '')) || 0;
+                        const vat = parseFloat(row.children[3].innerText.replace('%', '')) / 100 || 0;
+                        const unitsPerCase = parseInt(row.children[4].innerText) || 1;
+
+                        // Correctly calculate the total for the product (Order Quantity * Units Per Case * Unit Price)
+                        const total = qty * unitsPerCase * price * (1 + vat);
+
+                        // Update the total cost cell in the row
+                        totalCell.innerText = `£${total.toFixed(2)}`;
+
+                        // Add to grand total
+                        grandTotal += total;
+                    }
+                });
+
+                // Update the grand total in the footer
+                document.getElementById("grandTotal").innerText = `£${grandTotal.toFixed(2)}`;
+            });
+        };
+    </script>
 </body>
 </html>
