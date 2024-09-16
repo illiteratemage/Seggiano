@@ -1,10 +1,13 @@
+/* Global Reset for box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 h1 {
@@ -23,9 +26,6 @@ h1 {
 }
 
 form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
     width: 100%;
     max-width: 1200px;
     background-color: #fff;
@@ -34,18 +34,14 @@ form {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Standard table layout */
 table {
     width: 100%;
     border-collapse: collapse;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    table-layout: fixed; /* Make table cells consistent */
 }
 
-thead, tbody, tfoot {
-    display: contents;
-}
-
-thead tr {
+thead {
     background-color: #2b2349;
     color: white;
 }
@@ -54,6 +50,7 @@ th, td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 tr:nth-child(even) {
@@ -65,22 +62,30 @@ tr:nth-child(even) {
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
-    grid-column: span 7;
     background-color: #e0e0e0;
     padding: 10px 0;
     border-bottom: 2px solid #ccc;
+    grid-column: 1 / -1; /* Span across all columns */
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+    /* Allow table to scroll horizontally */
     table {
-        grid-template-columns: repeat(3, 1fr); /* Compress into fewer columns */
+        table-layout: auto; /* Allow dynamic width adjustment */
         overflow-x: auto;
+        display: block;
+    }
+    
+    th, td {
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
+    /* Ensure subheader spans all available columns */
     .subheader {
-        grid-column: span 3;
+        grid-column: 1 / -1;
     }
 }
 
