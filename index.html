@@ -2112,37 +2112,7 @@
         <input type="submit" value="Submit Order">
     </form>
 
-    <!-- JavaScript for calculating totals and case count -->
-    <script>
-        document.getElementById("orderForm").addEventListener("input", function () {
-            let grandTotal = 0;
-            let totalCases = 0;
-            
-            // Loop through each product row
-            document.querySelectorAll("tbody tr").forEach((row) => {
-                const qtyInput = row.querySelector('input[type="number"]');
-                const totalCell = row.querySelectorAll('td')[6]; // Total Cost column
-                
-                if (qtyInput && totalCell) {
-                    const qty = parseInt(qtyInput.value) || 0;
-                    const price = parseFloat(row.children[2].innerText.replace('£', '')) || 0;
-                    const vat = parseFloat(row.children[3].innerText.replace('%', '')) / 100 || 0;
-                    const unitsPerCase = parseInt(row.children[4].innerText) || 1;
-                    
-                    // Calculate total cost for the product
-                    const total = qty * unitsPerCase * price * (1 + vat);
-                    totalCell.innerText = `£${total.toFixed(2)}`;
-                    grandTotal += total;
-
-                    // Add to the total case count
-                    totalCases += qty;
-                }
-            });
-
-            // Update grand total and case count
-            document.getElementById("grandTotal").innerText = `£${grandTotal.toFixed(2)}`;
-            document.getElementById("caseCountTotal").innerText = totalCases;
-        });
-    </script>
+    <!-- Link to external JavaScript -->
+    <script src="app.js"></script>
 </body>
 </html>
