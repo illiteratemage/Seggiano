@@ -4,1964 +4,2145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Form</title>
+    <title>Seggiano Product Order Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="form-container">
-        <form id="orderForm">
-            <h1>Product Order Form</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product Code</th>
-                        <th>Product</th>
-                        <th>Unit Price</th>
-                        <th>VAT</th>
-                        <th>Units Per Case</th>
-                        <th>Order Quantity</th>
-                        <th>Total Cost</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="background-color: #D4CBB5;">
-                        <td colspan="7" style="text-align: center;"><strong>OIL & VINEGAR</strong></td>
-                    </tr>
-                    <tr>
-                        <td>1o1o/500</td>
-            <td>Lunaio Organic Italian Extra Virgin Olive Oil 500ml</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£10.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='10.90' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1o2/1000</td>
-            <td>Lunaio Organic Italian Extra Virgin Olive Oil 1000ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£18.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='18.90' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1o3o/250</td>
-            <td>Lunaio Organic Limited Edition EVOO 250ml</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£7.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.20' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5ocu2/500</td>
-            <td>Primo DOP Monti Iblei Extra Virgin Olive Oil 500ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£11.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='11.20' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5ocu1/500</td>
-            <td>Primo Organic Monti Iblei EVOO 500ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£11.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='11.50' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5odc1/250</td>
-            <td>De Carlo Puglian Terra di Bari EVOO 250ml</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£5.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.40' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5omi1/250</td>
-            <td>La Molazza Organic Extra Virgin Olive Oil 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£4.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.50' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5omi2/750</td>
-            <td>La Molazza Organic Extra Virgin Olive Oil 750ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£11.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='11.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1odc1/250</td>
-            <td>Lunaio Organic Basil Oil 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.20' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1odc2/250</td>
-            <td>Lunaio Organic Chilli Oil 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.20' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1odc3/250</td>
-            <td>Lunaio Organic Garlic Oil 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.20' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1odc4/250</td>
-            <td>Lunaio Organic Lemon Oil 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.20' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1odc5/250</td>
-            <td>Lunaio Organic Mandarin Oil 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.20' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1vfg1/250</td>
-            <td>Organic Mature Balsamic Vinegar of Modena 250ml</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.05</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.05' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1vfg2/250</td>
-            <td>Organic Aged Balsamic Vinegar of Modena 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£9.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='9.15' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1vva1/250</td>
-            <td>Seggiano Chilli Balsamic Glaze 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£6.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='6.65' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1vva2/250</td>
-            <td>Seggiano Classic Super Dense Balsamic Glaze 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£6.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='6.65' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1vva4/250</td>
-            <td>Seggiano Super Dense Fig Balsamic Glaze 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£6.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='6.65' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1vva5/250</td>
-            <td>Seggiano Super Dense Raspberry Balsamic Glaze 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£6.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='6.65' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1vva3/250</td>
-            <td>Seggiano Organic Rosé Balsamic Vinegar 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£5.05</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.05' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1vva6/250</td>
-            <td>Seggiano Organic White Balsamic Vinegar 250ml</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£5.05</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.05' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>SAVOURIES</td></tr>
+    <h1>Product Order Form</h1>
+    <form id="orderForm" action="https://script.google.com/macros/s/AKfycbwYocP4urGSto0X2-cfDVmRh6w7Bsa-hkQ_qVsm7uYgNRDuDIGraAytAIUg79oBiH1eVg/exec" method="POST">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Code</th>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>VAT</th>
+                    <th>Units Per Case</th>
+                    <th>Order Quantity</th>
+                    <th>Total Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan='7' style='text-align:center; font-weight:bold;'>OILS & VINEGARS</td></tr>
 
         <tr>
-            <td>1tdc3/350</td>
-            <td>Seggiano Organic Bella Di Cerignola Olives 350g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£5.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.60' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1o1o/500">1o1o/500</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Italian Extra Virgin Olive Oil 500ml">Lunaio Organic Italian Extra Virgin Olive Oil 500ml</td>
+            <td><input type="hidden" name="unitPrice" value="£10.90">£10.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1tdc4/190</td>
-            <td>Seggiano Organic Rosate di Bitteto Olives 190g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.90' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tcu1/190</td>
-            <td>Seggiano Black Olive Paté 190g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.95' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tfa2/180</td>
-            <td>Seggiano Fresh Artichoke Paté 180g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.95' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tfa11/180</td>
-            <td>Seggiano Sun-Dried Tomato Paté 180g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.95' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tga1/180</td>
-            <td>Seggiano Chilli Paste 180g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£5.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tfa6/380</td>
-            <td>Seggiano Roasted Artichoke Hearts in EVOO 380g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.90' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tol1/290</td>
-            <td>Seggiano Sicilian Artichoke Hearts 290g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.45</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.45' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tfa4/500</td>
-            <td>Seggiano Mixed Vegetable Antipasti 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£9.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='9.90' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tdc2/220</td>
-            <td>Oven Roasted Cherry Tomatoes in EVOO 220g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£5.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.50' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tdc5/280</td>
-            <td>Organic Oven Roasted Tomatoes in EVOO 280g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£6.85</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='6.85' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1tpr1/280</td>
-            <td>Seggiano Sweet Grilled Peppers</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.95' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>PESTO & SAUCES</td></tr>
 
         <tr>
-            <td>1slf1/200</td>
-            <td>Seggiano Raw Basil Pesto 200g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.65' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1o2/1000">1o2/1000</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Italian Extra Virgin Olive Oil 1000ml">Lunaio Organic Italian Extra Virgin Olive Oil 1000ml</td>
+            <td><input type="hidden" name="unitPrice" value="£18.90">£18.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1slf2/200</td>
-            <td>Seggiano Tomato Pesto 200g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.65' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1slf4/200</td>
-            <td>Seggiano Tuscan Kale Pesto 200g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£4.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.65' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1scu1/220</td>
-            <td>Seggiano Wild Fennel Tomato Pesto 220g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.75</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.75' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5slm1/180</td>
-            <td>La Macina Ligure Organic Pesto Genovese 180g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£5.75</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.75' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1sdc1/220</td>
-            <td>Seggiano Chilli Tomato Pasta Sauce 220g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.60' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1sdc2/220</td>
-            <td>Seggiano Olive Tomato Pasta Sauce 220g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1sdc3/220</td>
-            <td>Artichoke Ricotta Tomato Pasta Sauce 220g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1sca6/350</td>
-            <td>Organic Melanzane Pasta sauce 350g NEW</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.30' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1sca2/350</td>
-            <td>Seggiano Organic Basil Pasta Sauce 350g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.30' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1sca3/350</td>
-            <td>Seggiano Organic Marinara Pasta Sauce 350g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.30' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1sca4/350</td>
-            <td>Seggiano Organic Puttanesca Pasta Sauce 350g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.30' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1sca5/350</td>
-            <td>Seggiano Organic Arrabbiata Pasta Sauce 350g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.30' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1slf3/200</td>
-            <td>Tomato Sugo for Pasta and Bruschetta 200g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.30' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1smb/690</td>
-            <td>Seggiano Organic Tomato Passata 690g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£1.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='1.90' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1ssa1/330</td>
-            <td>Seggiano Sicilian Cherry Tomato Salsa 330g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.05</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.05' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5fst1/400</td>
-            <td>Strianese San Marzano DOP Tomatoes 400g</td>
-            <td>24</td>
-            <td>0%</td>
-            <td>£1.35</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='1.35' data-units-per-case='24'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5fst2/800</td>
-            <td>Strianese San Marzano DOP Tomatoes 800g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.60' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1ssa2/500</td>
-            <td>Organic Premium Sicilian Tomato Passata 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.25' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>SOUPS</td></tr>
 
         <tr>
-            <td>1zca1/360</td>
-            <td>Seggiano Golden Lentil Soup 360g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1o3o/250">1o3o/250</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Limited Edition EVOO 250ml">Lunaio Organic Limited Edition EVOO 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£7.20">£7.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1zca2/360</td>
-            <td>Seggiano 15 Vegetables Soup 360g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£4.35</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.35' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1zca3/360</td>
-            <td>Seggiano Organic Bean & Quinoa Soup 360g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>NIBBLES & CRACKERS</td></tr>
 
         <tr>
-            <td>1cmft1/120</td>
-            <td>Seggiano Classic Handmade Flatbreads 120g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.10</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.10' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="5ocu2/500">5ocu2/500</td>
+            <td><input type="hidden" name="product" value="Primo DOP Monti Iblei Extra Virgin Olive Oil 500ml">Primo DOP Monti Iblei Extra Virgin Olive Oil 500ml</td>
+            <td><input type="hidden" name="unitPrice" value="£11.20">£11.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1cmft2/120</td>
-            <td>Seggiano Parmesan Handmade Flatbreads 120g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.10</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.10' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmft3/120</td>
-            <td>Seggiano Rosemary Handmade Flatbreads 120g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.10</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.10' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmft6/120</td>
-            <td>Seggiano Taggiasca Olive Handmade Flatbreads 120g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.65' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmft5/120</td>
-            <td>Seggiano Tropea Onion Handmade Flatbreads 120g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.65' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfm1/100</td>
-            <td>Seggiano Classic Mini Tongues 100g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.75</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.75' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfm2/100</td>
-            <td>Seggiano Parmesan Mini Tongues 100g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.75</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.75' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfm3/100</td>
-            <td>Seggiano Rosemary Mini Tongues 100g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.75</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.75' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfg9/150</td>
-            <td>Seggiano Basil Grissini 150g NEW</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfg4/150</td>
-            <td>Seggiano Classic Grissini 150g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfg7/150</td>
-            <td>Seggiano Tropea Onion Grissini 150g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfg8/150</td>
-            <td>Seggiano Black Rice Grissini 150g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfg5/150</td>
-            <td>Seggiano Wholegrain Grissini 150g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cmfg6/150</td>
-            <td>Seggiano Sesame Grissini 150g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cdc1/150</td>
-            <td>Seggiano Organic Taralli 150g NEW</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.25' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>PASTAS</td></tr>
 
         <tr>
-            <td>1pcto20/375</td>
-            <td>Seggiano Organic Calamarata Pasta 375g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="5ocu1/500">5ocu1/500</td>
+            <td><input type="hidden" name="product" value="Primo Organic Monti Iblei EVOO 500ml">Primo Organic Monti Iblei EVOO 500ml</td>
+            <td><input type="hidden" name="unitPrice" value="£11.50">£11.50</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1pnto13/375</td>
-            <td>Seggiano Organic Tagliatelle Pasta 375g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pcto8/375</td>
-            <td>Seggiano Organic Toscani Pasta 375g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pcto4/500</td>
-            <td>Seggiano Organic Fusilli Pasta 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pnto7/250</td>
-            <td>Seggiano Organic Linguine Pasta 250g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pcto9/375</td>
-            <td>Seggiano Organic Paccheri Pasta 375g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pcto10/500</td>
-            <td>Seggiano Organic Penne Rigate Pasta 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pcto1/250</td>
-            <td>Seggiano Organic Conchiglie Pasta 250g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pnto14/375</td>
-            <td>Seggiano Organic Pappardelle Pasta 375g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pnto15/375</td>
-            <td>Seggiano Organic Spaghetti alla Chitarra Pasta 375g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£2.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pba1/375</td>
-            <td>Organic Ancient Grain Wholewheat Orzo 375g NEW</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.20' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pba2/250</td>
-            <td>Organic Ancient Grain Wholewheat Lumaconi 250g NEW</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£1.85</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='1.85' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pba3/250</td>
-            <td>Organic Ancient Grain Wholewheat Busiate 250g NEW</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£1.85</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='1.85' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pma2/250</td>
-            <td>Seggiano Organic Rice & Corn Tagliatelle 250gr</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.40' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1pma1/250</td>
-            <td>Seggiano Organice Rice & Corn Cavatappi 250g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£1.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='1.95' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1ppa3/250</td>
-            <td>Organic GF Buckwheat & White Corn Fettuccine 250g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1ppa5/250</td>
-            <td>Seggiano Organic GF Rice & Teff Tagliolini 250g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1ppa4/250</td>
-            <td>Seggiano Organic GF Rice & Quinoa Tagliatelle 250g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1ppa1/250</td>
-            <td>Seggiano Organic GF Red Lentil Fusilli 250g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1ppa2/250</td>
-            <td>Seggiano Organic GF Green Pea Fusilli 250g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1ppa6/250</td>
-            <td>Seggiano Organic GF Red Lentil Tagliatelle 250g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5pfl2/500</td>
-            <td>Felicetti Organic Monograno Farro Spaghetti 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5pfl1/500</td>
-            <td>Felicetti Organic Monograno Farro Penne 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.00' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5pfl4/500</td>
-            <td>Felicetti Organic Monograno Kamut Spaghetti 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.40' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5pfl3/500</td>
-            <td>Felicetti Organic Monograno Kamut Penne 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.40' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>RICES</td></tr>
 
         <tr>
-            <td>1rpv1/500</td>
-            <td>Seggiano Organic Arborio Risotto Rice 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="5odc1/250">5odc1/250</td>
+            <td><input type="hidden" name="product" value="De Carlo Puglian Terra di Bari EVOO 250ml">De Carlo Puglian Terra di Bari EVOO 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£5.40">£5.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1rpv3/500</td>
-            <td>Seggiano Organic Carnaroli Risotto Rice 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1rpv4/500</td>
-            <td>Seggiano Organic Wild Red Rice 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.90' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1rpv2/500</td>
-            <td>Seggiano Organic Black Venus Rice 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£2.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.90' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>CHEESEBOARD</td></tr>
 
         <tr>
-            <td>2cfb1/kg</td>
-            <td>Seggiano Dolce Pecorino Cheese Fresco</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£18.45</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='18.45' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="5omi1/250">5omi1/250</td>
+            <td><input type="hidden" name="product" value="La Molazza Organic Extra Virgin Olive Oil 250ml">La Molazza Organic Extra Virgin Olive Oil 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£4.50">£4.50</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>2cfb2/kg</td>
-            <td>Seggiano Rosso Pecorino Cheese Semi-Stagionato</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£19.05</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='19.05' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2cfb3/kg</td>
-            <td>Seggiano Nero Pecorino Cheese Stagionato</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£20.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='20.65' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2cfb4/kg</td>
-            <td>Seggiano Truffle Pecorino Cheese</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£22.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='22.65' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2cfb5/kg</td>
-            <td>Seggiano Chilli Pecorino Cheese</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£19.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='19.30' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2cfb7/500</td>
-            <td>TRUCKLE Truffle Pecorino Tuscan (form 500g) - price/kg</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£22.65</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='22.65' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1car2/200</td>
-            <td>Seggiano Baked Fig Ball 200g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.20</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.20' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>SWEET SPREADS</td></tr>
 
         <tr>
-            <td>1hmp1/500</td>
-            <td>Seggiano Acacia Raw Honey 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£8.55</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='8.55' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="5omi2/750">5omi2/750</td>
+            <td><input type="hidden" name="product" value="La Molazza Organic Extra Virgin Olive Oil 750ml">La Molazza Organic Extra Virgin Olive Oil 750ml</td>
+            <td><input type="hidden" name="unitPrice" value="£11.25">£11.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1hmp2/500</td>
-            <td>Seggiano Chestnut Raw Honey 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.60' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmp3/500</td>
-            <td>Seggiano Eucalyptus Raw Honey 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.60' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmp6/500</td>
-            <td>Seggiano Woodland Honeydew Raw Honey 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.60' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmp4/500</td>
-            <td>Seggiano Wildflower Raw Honey 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.75</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.75' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmp5/500</td>
-            <td>Seggiano Heather Raw Honey 500g *</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.60' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmp7/500</td>
-            <td>Seggiano Sunflower Raw Honey 500g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£7.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.60' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmo4/500</td>
-            <td>Seggiano Sicilian Thyme Raw Honey 500g *</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£8.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='8.95' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmo2/500</td>
-            <td>Seggiano Sicilian Orange Blossom Raw Honey 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£7.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.40' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmo3/500</td>
-            <td>Seggiano Sicilian Wild Carrot Raw Honey 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£7.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.40' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmo6/500</td>
-            <td>Seggiano Sicilian Sulla Raw Honey 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£7.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1hmo7/500</td>
-            <td>Seggiano Sicilian Thistle Raw Honey 500g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£7.80</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.80' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1jde1/200</td>
-            <td>Organic Smooth Dark Hazelnut Spread 200g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£4.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1jme1/200</td>
-            <td>Organic Crunchy Chocolate Hazelnut Spread 200g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.25' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1jme2/200</td>
-            <td>Organic Smooth Chocolate Hazelnut Spread 200g</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.25' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1jcu2/225</td>
-            <td>Mandarin Conserve Sicilian Extra Jam 225g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.10</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.10' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1jcu1/225</td>
-            <td>Grapefruit Conserve Sicilian Extra Jam 225g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.10</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.10' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1jar2/200</td>
-            <td>Fig Conserve Calabrian Pure Fruit Jam 200g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£4.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.15' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>CLASSIC BISCUITS & DOLCETTI</td></tr>
 
         <tr>
-            <td>1cld1/170</td>
-            <td>Seggiano Organic Kamut Digestive Biscuits 170g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1odc1/250">1odc1/250</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Basil Oil 250ml">Lunaio Organic Basil Oil 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£7.20">£7.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1cld2/150</td>
-            <td>Organic Buckwheat Digestive Biscuits 150g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cld3/150</td>
-            <td>Seggiano Organic Rye Digestive Biscuits 150g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1cld4/160</td>
-            <td>Seggiano Organic Spelt Digestive Biscuits 150g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£3.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.00' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1BMR9/200</td>
-            <td>Seggiano Sea Salt & Chocolate biscotti 200g</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£3.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.90' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1BMR10/200</td>
-            <td>Seggiano Double Chocolate Cantuccini 200g</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£3.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.90' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1BMR11/200</td>
-            <td>Seggiano Chocolate & Orange Cantuccini 200g</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£3.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.90' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr8/200</td>
-            <td>Seggiano Cantuccini Biscotti 200g</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£3.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.90' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr6/200</td>
-            <td>Seggiano Chocolate Saturnelle 200g</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£3.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.90' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr5/200</td>
-            <td>Seggiano Orange Walnut 200g</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£3.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.90' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr12/200</td>
-            <td>Seggiano Brutti ma Buoni Biscuits 180g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£4.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.50' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr13/200</td>
-            <td>Seggiano Amaretti Soft Almond Biscuits 200g</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£4.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.50' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>CHRISTMAS & EASTER CAKES</td></tr>
 
         <tr>
-            <td>1bli1/500</td>
-            <td>Seggiano Classic Christmas Panettone 500g *</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£10.10</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='10.10' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1odc2/250">1odc2/250</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Chilli Oil 250ml">Lunaio Organic Chilli Oil 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£7.20">£7.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1bli4/500</td>
-            <td>Seggiano Chestnut Panettone 500g *</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£11.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='11.15' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bli5/500</td>
-            <td>Seggiano Chocolate Panettone 500g NEW</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£11.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='11.40' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bli6/500</td>
-            <td>Seggiano Vegan Artisan Panettone 500g NEW</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£11.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='11.40' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bli3/500</td>
-            <td>Seggiano Limoncello Panettone 500g *</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£11.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='11.40' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5bbn2/450</td>
-            <td>Bonci Panbriacone 500g *</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£16.40</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='16.40' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>5bbn3/750</td>
-            <td>Bonci Panbriacone 850g *</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£21.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='21.25' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bli2/500</td>
-            <td>Seggiano Colomba 500g *</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£12.85</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='12.85' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bli8/500</td>
-            <td>Seggiano Vegan Colomba 500g NEW! *</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£12.85</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='12.85' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>AFTER DINNER TREATS</td></tr>
 
         <tr>
-            <td>1mmz1/100</td>
-            <td>Seggiano Ready To Eat Chestnuts 100g</td>
-            <td>20</td>
-            <td>0%</td>
-            <td>£1.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='1.90' data-units-per-case='20'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1odc3/250">1odc3/250</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Garlic Oil 250ml">Lunaio Organic Garlic Oil 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£7.20">£7.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1bmr3/100</td>
-            <td>Seggiano Traditional Panforte 100g *</td>
-            <td>30</td>
-            <td>0%</td>
-            <td>£2.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.95' data-units-per-case='30'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr4/400</td>
-            <td>Seggiano Traditional Panforte 400g *</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£6.75</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='6.75' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr1/100</td>
-            <td>Seggiano Chocolate Panforte 100g *</td>
-            <td>30</td>
-            <td>0%</td>
-            <td>£2.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.95' data-units-per-case='30'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr2/400</td>
-            <td>Seggiano Chocolate Panforte 400g *</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£6.75</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='6.75' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1bmr7/200</td>
-            <td>Seggiano Fig & Walnut Panforte 200g *</td>
-            <td>12</td>
-            <td>0%</td>
-            <td>£4.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.15' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>CHOCOLATE & FRUITS</td></tr>
 
         <tr>
-            <td>1bmfg1/100</td>
-            <td>Seggiano Chocolate Grissini 100g NEW</td>
-            <td>12</td>
-            <td>20%</td>
-            <td>£3.70</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.70' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1odc4/250">1odc4/250</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Lemon Oil 250ml">Lunaio Organic Lemon Oil 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£7.20">£7.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1dmr1/80</td>
-            <td>Seggiano Marzipan Maraschino Chocolate 80g NEW</td>
-            <td>12</td>
-            <td>20%</td>
-            <td>£3.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='3.60' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1dga6/120</td>
-            <td>Seggiano Chocolate Clementines 120g *</td>
-            <td>12</td>
-            <td>20%</td>
-            <td>£5.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.50' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1dga7/140</td>
-            <td>Seggiano Heavenly Chocolate Cherry Figs 140g *</td>
-            <td>12</td>
-            <td>20%</td>
-            <td>£5.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.50' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1dga8/120</td>
-            <td>Seggiano Chocolate Rum Figs 120g *</td>
-            <td>12</td>
-            <td>20%</td>
-            <td>£5.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='5.50' data-units-per-case='12'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1dga2/180</td>
-            <td>Seggiano Chocolate Fig Salame 180g *</td>
-            <td>24</td>
-            <td>nan</td>
-            <td>£4.45</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='4.45' data-units-per-case='24'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>LIQUORICE</td></tr>
 
         <tr>
-            <td>1dnm4/100</td>
-            <td>Seggiano Organic Liquorice Spirals 100g</td>
-            <td>20</td>
-            <td>20%</td>
-            <td>£1.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='1.30' data-units-per-case='20'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1odc5/250">1odc5/250</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Mandarin Oil 250ml">Lunaio Organic Mandarin Oil 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£7.20">£7.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1dnm5/10</td>
-            <td>Seggiano Organic Liquorice Tronchettini 10g in Tins</td>
-            <td>32</td>
-            <td>0%</td>
-            <td>£0.99</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='0.99' data-units-per-case='32'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1dnm3/60</td>
-            <td>Seggiano Organic Liquorice Rope 60g</td>
-            <td>20</td>
-            <td>20%</td>
-            <td>£1.25</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='1.25' data-units-per-case='20'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1dnm2/100</td>
-            <td>Seggiano Organic Liquorice Pebbles 100g</td>
-            <td>20</td>
-            <td>20%</td>
-            <td>£2.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.30' data-units-per-case='20'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>ORGANIC SEMI-FRESH HERBS</td></tr>
 
         <tr>
-            <td>1mel1/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Basil</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1vfg1/250">1vfg1/250</td>
+            <td><input type="hidden" name="product" value="Organic Mature Balsamic Vinegar of Modena 250ml">Organic Mature Balsamic Vinegar of Modena 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£4.05">£4.05</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>1mel2/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Mint</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1mel3/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Dill</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1mel4/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Coriander</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1mel5/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Parsley</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1mel6/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Thyme</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1mel7/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Sage</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1mel8/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Rosemary</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1mel9/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Oregano</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>1mel10/18</td>
-            <td>Seggiano Organic Semi fresh herbs 18g- Italian Blend</td>
-            <td>8</td>
-            <td>0%</td>
-            <td>£2.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='2.15' data-units-per-case='8'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>GIFT BOXES</td></tr>
 
         <tr>
-            <td>4g10</td>
-            <td>Italian Oil & Vinegar</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£13.10</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='13.10' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1vfg2/250">1vfg2/250</td>
+            <td><input type="hidden" name="product" value="Organic Aged Balsamic Vinegar of Modena 250ml">Organic Aged Balsamic Vinegar of Modena 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£9.15">£9.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>4g11</td>
-            <td>Balsamics for Cooks</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£14.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='14.30' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>4g12</td>
-            <td>Chocolate Lovers</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£14.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='14.30' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>4g1</td>
-            <td>Savoury Gift Box *</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£18.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='18.60' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2o/5l</td>
-            <td>Lunaio Organic Italian Extra Virgin Olive Oil 5L</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£79.90</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='79.90' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2omi3/5l</td>
-            <td>La Molazza Organic Calabrian Extra Virgin Olive Oil 5L</td>
-            <td>1</td>
-            <td>0%</td>
-            <td>£59.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='59.50' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2slf1/1kg</td>
-            <td>Basil Genovese pesto 1kg</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£14.50</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='14.50' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2slf4/4kg</td>
-            <td>Basil Genovese Pesto 4kg</td>
-            <td>2</td>
-            <td>0%</td>
-            <td>£54.00</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='54.00' data-units-per-case='2'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2tfa3/3.9kg</td>
-            <td>Roasted Artichokes in Extra Virgin Olive Oil 3.9kg</td>
-            <td>4</td>
-            <td>0%</td>
-            <td>£59.95</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='59.95' data-units-per-case='4'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>2tdc2/1kg</td>
-            <td>Oven Roasted Tomatoes in evoo 1kg</td>
-            <td>6</td>
-            <td>0%</td>
-            <td>£17.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='17.30' data-units-per-case='6'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>OLIVE WOOD CREATIONS</td></tr>
 
         <tr>
-            <td>3ymc01</td>
-            <td>Olive Wood Boards (price per Kg)</td>
-            <td>1</td>
-            <td>20%</td>
-            <td>£14.60</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='14.60' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
+            <td><input type="hidden" name="productCode" value="1vva1/250">1vva1/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Chilli Balsamic Glaze 250ml">Seggiano Chilli Balsamic Glaze 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£6.65">£6.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
         </tr>
         
-        <tr>
-            <td>3ymc03</td>
-            <td>Olive Wood Heart Board</td>
-            <td>1</td>
-            <td>20%</td>
-            <td>£15.30</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='15.30' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>3ymc05</td>
-            <td>Small Olive Wood Grater</td>
-            <td>1</td>
-            <td>20%</td>
-            <td>£7.35</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='7.35' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>3ymc06</td>
-            <td>Medium Olive Wood Grater</td>
-            <td>1</td>
-            <td>20%</td>
-            <td>£10.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='10.15' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>3ymc07</td>
-            <td>Large Olive Wood Grater</td>
-            <td>1</td>
-            <td>20%</td>
-            <td>£12.45</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='12.45' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        
-        <tr>
-            <td>3ymc08</td>
-            <td>Olive Wood Pestle & Mortar</td>
-            <td>1</td>
-            <td>20%</td>
-            <td>£17.15</td>
-            <td><input type='number' min='0' step='1' class='quantity' data-unit-price='17.15' data-units-per-case='1'></td>
-            <td class="total-cost">£0.00</td>
-        </tr>
-        <tr><td colspan='7' style='text-align:center; font-weight:bold;'>nan</td></tr>
-<tr><td colspan='7' style='text-align:center; font-weight:bold;'>nan</td></tr>
 
+        <tr>
+            <td><input type="hidden" name="productCode" value="1vva2/250">1vva2/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Classic Super Dense Balsamic Glaze 250ml">Seggiano Classic Super Dense Balsamic Glaze 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£6.65">£6.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1vva4/250">1vva4/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Super Dense Fig Balsamic Glaze 250ml">Seggiano Super Dense Fig Balsamic Glaze 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£6.65">£6.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1vva5/250">1vva5/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Super Dense Raspberry Balsamic Glaze 250ml">Seggiano Super Dense Raspberry Balsamic Glaze 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£6.65">£6.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1vva3/250">1vva3/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Rosé Balsamic Vinegar 250ml">Seggiano Organic Rosé Balsamic Vinegar 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£5.05">£5.05</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1vva6/250">1vva6/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic White Balsamic Vinegar 250ml">Seggiano Organic White Balsamic Vinegar 250ml</td>
+            <td><input type="hidden" name="unitPrice" value="£5.05">£5.05</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>SAVOURIES</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tdc3/350">1tdc3/350</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Bella Di Cerignola Olives 350g">Seggiano Organic Bella Di Cerignola Olives 350g</td>
+            <td><input type="hidden" name="unitPrice" value="£5.60">£5.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tdc4/190">1tdc4/190</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Rosate di Bitteto Olives 190g">Seggiano Organic Rosate di Bitteto Olives 190g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.90">£3.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tcu1/190">1tcu1/190</td>
+            <td><input type="hidden" name="product" value="Seggiano Black Olive Paté 190g">Seggiano Black Olive Paté 190g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.95">£3.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tfa2/180">1tfa2/180</td>
+            <td><input type="hidden" name="product" value="Seggiano Fresh Artichoke Paté 180g">Seggiano Fresh Artichoke Paté 180g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.95">£3.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tfa11/180">1tfa11/180</td>
+            <td><input type="hidden" name="product" value="Seggiano Sun-Dried Tomato Paté 180g">Seggiano Sun-Dried Tomato Paté 180g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.95">£3.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tga1/180">1tga1/180</td>
+            <td><input type="hidden" name="product" value="Seggiano Chilli Paste 180g">Seggiano Chilli Paste 180g</td>
+            <td><input type="hidden" name="unitPrice" value="£5.00">£5.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tfa6/380">1tfa6/380</td>
+            <td><input type="hidden" name="product" value="Seggiano Roasted Artichoke Hearts in EVOO 380g">Seggiano Roasted Artichoke Hearts in EVOO 380g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.90">£7.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tol1/290">1tol1/290</td>
+            <td><input type="hidden" name="product" value="Seggiano Sicilian Artichoke Hearts 290g">Seggiano Sicilian Artichoke Hearts 290g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.45">£4.45</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tfa4/500">1tfa4/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Mixed Vegetable Antipasti 500g">Seggiano Mixed Vegetable Antipasti 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£9.90">£9.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tdc2/220">1tdc2/220</td>
+            <td><input type="hidden" name="product" value="Oven Roasted Cherry Tomatoes in EVOO 220g">Oven Roasted Cherry Tomatoes in EVOO 220g</td>
+            <td><input type="hidden" name="unitPrice" value="£5.50">£5.50</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tdc5/280">1tdc5/280</td>
+            <td><input type="hidden" name="product" value="Organic Oven Roasted Tomatoes in EVOO 280g">Organic Oven Roasted Tomatoes in EVOO 280g</td>
+            <td><input type="hidden" name="unitPrice" value="£6.85">£6.85</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1tpr1/280">1tpr1/280</td>
+            <td><input type="hidden" name="product" value="Seggiano Sweet Grilled Peppers">Seggiano Sweet Grilled Peppers</td>
+            <td><input type="hidden" name="unitPrice" value="£3.95">£3.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>PESTO & SAUCES</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1slf1/200">1slf1/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Raw Basil Pesto 200g">Seggiano Raw Basil Pesto 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.65">£4.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1slf2/200">1slf2/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Tomato Pesto 200g">Seggiano Tomato Pesto 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.65">£4.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1slf4/200">1slf4/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Tuscan Kale Pesto 200g">Seggiano Tuscan Kale Pesto 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.65">£4.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1scu1/220">1scu1/220</td>
+            <td><input type="hidden" name="product" value="Seggiano Wild Fennel Tomato Pesto 220g">Seggiano Wild Fennel Tomato Pesto 220g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.75">£3.75</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5slm1/180">5slm1/180</td>
+            <td><input type="hidden" name="product" value="La Macina Ligure Organic Pesto Genovese 180g">La Macina Ligure Organic Pesto Genovese 180g</td>
+            <td><input type="hidden" name="unitPrice" value="£5.75">£5.75</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1sdc1/220">1sdc1/220</td>
+            <td><input type="hidden" name="product" value="Seggiano Chilli Tomato Pasta Sauce 220g">Seggiano Chilli Tomato Pasta Sauce 220g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.60">£2.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1sdc2/220">1sdc2/220</td>
+            <td><input type="hidden" name="product" value="Seggiano Olive Tomato Pasta Sauce 220g">Seggiano Olive Tomato Pasta Sauce 220g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.25">£3.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1sdc3/220">1sdc3/220</td>
+            <td><input type="hidden" name="product" value="Artichoke Ricotta Tomato Pasta Sauce 220g">Artichoke Ricotta Tomato Pasta Sauce 220g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.25">£3.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1sca6/350">1sca6/350</td>
+            <td><input type="hidden" name="product" value="Organic Melanzane Pasta sauce 350g NEW">Organic Melanzane Pasta sauce 350g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£2.30">£2.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1sca2/350">1sca2/350</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Basil Pasta Sauce 350g">Seggiano Organic Basil Pasta Sauce 350g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.30">£2.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1sca3/350">1sca3/350</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Marinara Pasta Sauce 350g">Seggiano Organic Marinara Pasta Sauce 350g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.30">£2.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1sca4/350">1sca4/350</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Puttanesca Pasta Sauce 350g">Seggiano Organic Puttanesca Pasta Sauce 350g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.30">£2.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1sca5/350">1sca5/350</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Arrabbiata Pasta Sauce 350g">Seggiano Organic Arrabbiata Pasta Sauce 350g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.30">£2.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1slf3/200">1slf3/200</td>
+            <td><input type="hidden" name="product" value="Tomato Sugo for Pasta and Bruschetta 200g">Tomato Sugo for Pasta and Bruschetta 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.30">£3.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1smb/690">1smb/690</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Tomato Passata 690g">Seggiano Organic Tomato Passata 690g</td>
+            <td><input type="hidden" name="unitPrice" value="£1.90">£1.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1ssa1/330">1ssa1/330</td>
+            <td><input type="hidden" name="product" value="Seggiano Sicilian Cherry Tomato Salsa 330g">Seggiano Sicilian Cherry Tomato Salsa 330g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.05">£2.05</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5fst1/400">5fst1/400</td>
+            <td><input type="hidden" name="product" value="Strianese San Marzano DOP Tomatoes 400g">Strianese San Marzano DOP Tomatoes 400g</td>
+            <td><input type="hidden" name="unitPrice" value="£1.35">£1.35</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="24.0">24</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5fst2/800">5fst2/800</td>
+            <td><input type="hidden" name="product" value="Strianese San Marzano DOP Tomatoes 800g">Strianese San Marzano DOP Tomatoes 800g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.60">£2.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1ssa2/500">1ssa2/500</td>
+            <td><input type="hidden" name="product" value="Organic Premium Sicilian Tomato Passata 500g">Organic Premium Sicilian Tomato Passata 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.25">£2.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>SOUPS</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1zca1/360">1zca1/360</td>
+            <td><input type="hidden" name="product" value="Seggiano Golden Lentil Soup 360g">Seggiano Golden Lentil Soup 360g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.25">£3.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1zca2/360">1zca2/360</td>
+            <td><input type="hidden" name="product" value="Seggiano 15 Vegetables Soup 360g">Seggiano 15 Vegetables Soup 360g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.35">£4.35</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1zca3/360">1zca3/360</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Bean & Quinoa Soup 360g">Seggiano Organic Bean & Quinoa Soup 360g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.25">£3.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>NIBBLES & CRACKERS</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmft1/120">1cmft1/120</td>
+            <td><input type="hidden" name="product" value="Seggiano Classic Handmade Flatbreads 120g">Seggiano Classic Handmade Flatbreads 120g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.10">£3.10</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmft2/120">1cmft2/120</td>
+            <td><input type="hidden" name="product" value="Seggiano Parmesan Handmade Flatbreads 120g">Seggiano Parmesan Handmade Flatbreads 120g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.10">£3.10</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmft3/120">1cmft3/120</td>
+            <td><input type="hidden" name="product" value="Seggiano Rosemary Handmade Flatbreads 120g">Seggiano Rosemary Handmade Flatbreads 120g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.10">£3.10</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmft6/120">1cmft6/120</td>
+            <td><input type="hidden" name="product" value="Seggiano Taggiasca Olive Handmade Flatbreads 120g">Seggiano Taggiasca Olive Handmade Flatbreads 120g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.65">£3.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmft5/120">1cmft5/120</td>
+            <td><input type="hidden" name="product" value="Seggiano Tropea Onion Handmade Flatbreads 120g">Seggiano Tropea Onion Handmade Flatbreads 120g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.65">£3.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfm1/100">1cmfm1/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Classic Mini Tongues 100g">Seggiano Classic Mini Tongues 100g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.75">£2.75</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfm2/100">1cmfm2/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Parmesan Mini Tongues 100g">Seggiano Parmesan Mini Tongues 100g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.75">£2.75</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfm3/100">1cmfm3/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Rosemary Mini Tongues 100g">Seggiano Rosemary Mini Tongues 100g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.75">£2.75</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfg9/150">1cmfg9/150</td>
+            <td><input type="hidden" name="product" value="Seggiano Basil Grissini 150g NEW">Seggiano Basil Grissini 150g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfg4/150">1cmfg4/150</td>
+            <td><input type="hidden" name="product" value="Seggiano Classic Grissini 150g">Seggiano Classic Grissini 150g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfg7/150">1cmfg7/150</td>
+            <td><input type="hidden" name="product" value="Seggiano Tropea Onion Grissini 150g">Seggiano Tropea Onion Grissini 150g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfg8/150">1cmfg8/150</td>
+            <td><input type="hidden" name="product" value="Seggiano Black Rice Grissini 150g">Seggiano Black Rice Grissini 150g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfg5/150">1cmfg5/150</td>
+            <td><input type="hidden" name="product" value="Seggiano Wholegrain Grissini 150g">Seggiano Wholegrain Grissini 150g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cmfg6/150">1cmfg6/150</td>
+            <td><input type="hidden" name="product" value="Seggiano Sesame Grissini 150g">Seggiano Sesame Grissini 150g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cdc1/150">1cdc1/150</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Taralli 150g NEW">Seggiano Organic Taralli 150g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£2.25">£2.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>PASTAS</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pcto20/375">1pcto20/375</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Calamarata Pasta 375g">Seggiano Organic Calamarata Pasta 375g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.80">£2.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pnto13/375">1pnto13/375</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Tagliatelle Pasta 375g">Seggiano Organic Tagliatelle Pasta 375g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.80">£2.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pcto8/375">1pcto8/375</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Toscani Pasta 375g">Seggiano Organic Toscani Pasta 375g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.80">£2.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pcto4/500">1pcto4/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Fusilli Pasta 500g">Seggiano Organic Fusilli Pasta 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.80">£2.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pnto7/250">1pnto7/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Linguine Pasta 250g">Seggiano Organic Linguine Pasta 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.00">£2.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pcto9/375">1pcto9/375</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Paccheri Pasta 375g">Seggiano Organic Paccheri Pasta 375g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.80">£2.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pcto10/500">1pcto10/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Penne Rigate Pasta 500g">Seggiano Organic Penne Rigate Pasta 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.80">£2.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pcto1/250">1pcto1/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Conchiglie Pasta 250g">Seggiano Organic Conchiglie Pasta 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.00">£2.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pnto14/375">1pnto14/375</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Pappardelle Pasta 375g">Seggiano Organic Pappardelle Pasta 375g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.80">£2.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pnto15/375">1pnto15/375</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Spaghetti alla Chitarra Pasta 375g">Seggiano Organic Spaghetti alla Chitarra Pasta 375g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.80">£2.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pba1/375">1pba1/375</td>
+            <td><input type="hidden" name="product" value="Organic Ancient Grain Wholewheat Orzo 375g NEW">Organic Ancient Grain Wholewheat Orzo 375g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£2.20">£2.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pba2/250">1pba2/250</td>
+            <td><input type="hidden" name="product" value="Organic Ancient Grain Wholewheat Lumaconi 250g NEW">Organic Ancient Grain Wholewheat Lumaconi 250g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£1.85">£1.85</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pba3/250">1pba3/250</td>
+            <td><input type="hidden" name="product" value="Organic Ancient Grain Wholewheat Busiate 250g NEW">Organic Ancient Grain Wholewheat Busiate 250g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£1.85">£1.85</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pma2/250">1pma2/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Rice & Corn Tagliatelle 250gr">Seggiano Organic Rice & Corn Tagliatelle 250gr</td>
+            <td><input type="hidden" name="unitPrice" value="£2.40">£2.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1pma1/250">1pma1/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organice Rice & Corn Cavatappi 250g">Seggiano Organice Rice & Corn Cavatappi 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£1.95">£1.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1ppa3/250">1ppa3/250</td>
+            <td><input type="hidden" name="product" value="Organic GF Buckwheat & White Corn Fettuccine 250g">Organic GF Buckwheat & White Corn Fettuccine 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1ppa5/250">1ppa5/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic GF Rice & Teff Tagliolini 250g">Seggiano Organic GF Rice & Teff Tagliolini 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1ppa4/250">1ppa4/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic GF Rice & Quinoa Tagliatelle 250g">Seggiano Organic GF Rice & Quinoa Tagliatelle 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1ppa1/250">1ppa1/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic GF Red Lentil Fusilli 250g">Seggiano Organic GF Red Lentil Fusilli 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1ppa2/250">1ppa2/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic GF Green Pea Fusilli 250g">Seggiano Organic GF Green Pea Fusilli 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1ppa6/250">1ppa6/250</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic GF Red Lentil Tagliatelle 250g">Seggiano Organic GF Red Lentil Tagliatelle 250g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5pfl2/500">5pfl2/500</td>
+            <td><input type="hidden" name="product" value="Felicetti Organic Monograno Farro Spaghetti 500g">Felicetti Organic Monograno Farro Spaghetti 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.00">£4.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5pfl1/500">5pfl1/500</td>
+            <td><input type="hidden" name="product" value="Felicetti Organic Monograno Farro Penne 500g">Felicetti Organic Monograno Farro Penne 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.00">£4.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5pfl4/500">5pfl4/500</td>
+            <td><input type="hidden" name="product" value="Felicetti Organic Monograno Kamut Spaghetti 500g">Felicetti Organic Monograno Kamut Spaghetti 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.40">£4.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5pfl3/500">5pfl3/500</td>
+            <td><input type="hidden" name="product" value="Felicetti Organic Monograno Kamut Penne 500g">Felicetti Organic Monograno Kamut Penne 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.40">£4.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>RICES</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1rpv1/500">1rpv1/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Arborio Risotto Rice 500g">Seggiano Organic Arborio Risotto Rice 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.25">£3.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1rpv3/500">1rpv3/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Carnaroli Risotto Rice 500g">Seggiano Organic Carnaroli Risotto Rice 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.25">£3.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1rpv4/500">1rpv4/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Wild Red Rice 500g">Seggiano Organic Wild Red Rice 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.90">£2.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1rpv2/500">1rpv2/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Black Venus Rice 500g">Seggiano Organic Black Venus Rice 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.90">£2.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>CHEESEBOARD</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2cfb1/kg">2cfb1/kg</td>
+            <td><input type="hidden" name="product" value="Seggiano Dolce Pecorino Cheese Fresco">Seggiano Dolce Pecorino Cheese Fresco</td>
+            <td><input type="hidden" name="unitPrice" value="£18.45">£18.45</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2cfb2/kg">2cfb2/kg</td>
+            <td><input type="hidden" name="product" value="Seggiano Rosso Pecorino Cheese Semi-Stagionato">Seggiano Rosso Pecorino Cheese Semi-Stagionato</td>
+            <td><input type="hidden" name="unitPrice" value="£19.05">£19.05</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2cfb3/kg">2cfb3/kg</td>
+            <td><input type="hidden" name="product" value="Seggiano Nero Pecorino Cheese Stagionato">Seggiano Nero Pecorino Cheese Stagionato</td>
+            <td><input type="hidden" name="unitPrice" value="£20.65">£20.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2cfb4/kg">2cfb4/kg</td>
+            <td><input type="hidden" name="product" value="Seggiano Truffle Pecorino Cheese">Seggiano Truffle Pecorino Cheese</td>
+            <td><input type="hidden" name="unitPrice" value="£22.65">£22.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2cfb5/kg">2cfb5/kg</td>
+            <td><input type="hidden" name="product" value="Seggiano Chilli Pecorino Cheese">Seggiano Chilli Pecorino Cheese</td>
+            <td><input type="hidden" name="unitPrice" value="£19.30">£19.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2cfb7/500">2cfb7/500</td>
+            <td><input type="hidden" name="product" value="TRUCKLE Truffle Pecorino Tuscan (form 500g) - price/kg">TRUCKLE Truffle Pecorino Tuscan (form 500g) - price/kg</td>
+            <td><input type="hidden" name="unitPrice" value="£22.65">£22.65</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1car2/200">1car2/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Baked Fig Ball 200g">Seggiano Baked Fig Ball 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.20">£4.20</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>SWEET SPREADS</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmp1/500">1hmp1/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Acacia Raw Honey 500g">Seggiano Acacia Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£8.55">£8.55</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmp2/500">1hmp2/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Chestnut Raw Honey 500g">Seggiano Chestnut Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.60">£7.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmp3/500">1hmp3/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Eucalyptus Raw Honey 500g">Seggiano Eucalyptus Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.60">£7.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmp6/500">1hmp6/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Woodland Honeydew Raw Honey 500g">Seggiano Woodland Honeydew Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.60">£7.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmp4/500">1hmp4/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Wildflower Raw Honey 500g">Seggiano Wildflower Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.75">£7.75</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmp5/500">1hmp5/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Heather Raw Honey 500g *">Seggiano Heather Raw Honey 500g *</td>
+            <td><input type="hidden" name="unitPrice" value="£7.60">£7.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmp7/500">1hmp7/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Sunflower Raw Honey 500g">Seggiano Sunflower Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.60">£7.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmo4/500">1hmo4/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Sicilian Thyme Raw Honey 500g *">Seggiano Sicilian Thyme Raw Honey 500g *</td>
+            <td><input type="hidden" name="unitPrice" value="£8.95">£8.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmo2/500">1hmo2/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Sicilian Orange Blossom Raw Honey 500g">Seggiano Sicilian Orange Blossom Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.40">£7.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmo3/500">1hmo3/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Sicilian Wild Carrot Raw Honey 500g">Seggiano Sicilian Wild Carrot Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.40">£7.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmo6/500">1hmo6/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Sicilian Sulla Raw Honey 500g">Seggiano Sicilian Sulla Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.80">£7.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1hmo7/500">1hmo7/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Sicilian Thistle Raw Honey 500g">Seggiano Sicilian Thistle Raw Honey 500g</td>
+            <td><input type="hidden" name="unitPrice" value="£7.80">£7.80</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1jde1/200">1jde1/200</td>
+            <td><input type="hidden" name="product" value="Organic Smooth Dark Hazelnut Spread 200g">Organic Smooth Dark Hazelnut Spread 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.25">£4.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1jme1/200">1jme1/200</td>
+            <td><input type="hidden" name="product" value="Organic Crunchy Chocolate Hazelnut Spread 200g">Organic Crunchy Chocolate Hazelnut Spread 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.25">£4.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1jme2/200">1jme2/200</td>
+            <td><input type="hidden" name="product" value="Organic Smooth Chocolate Hazelnut Spread 200g">Organic Smooth Chocolate Hazelnut Spread 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.25">£4.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1jcu2/225">1jcu2/225</td>
+            <td><input type="hidden" name="product" value="Mandarin Conserve Sicilian Extra Jam 225g">Mandarin Conserve Sicilian Extra Jam 225g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.10">£3.10</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1jcu1/225">1jcu1/225</td>
+            <td><input type="hidden" name="product" value="Grapefruit Conserve Sicilian Extra Jam 225g">Grapefruit Conserve Sicilian Extra Jam 225g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.10">£3.10</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1jar2/200">1jar2/200</td>
+            <td><input type="hidden" name="product" value="Fig Conserve Calabrian Pure Fruit Jam 200g">Fig Conserve Calabrian Pure Fruit Jam 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.15">£4.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>CLASSIC BISCUITS & DOLCETTI</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cld1/170">1cld1/170</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Kamut Digestive Biscuits 170g">Seggiano Organic Kamut Digestive Biscuits 170g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cld2/150">1cld2/150</td>
+            <td><input type="hidden" name="product" value="Organic Buckwheat Digestive Biscuits 150g">Organic Buckwheat Digestive Biscuits 150g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cld3/150">1cld3/150</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Rye Digestive Biscuits 150g">Seggiano Organic Rye Digestive Biscuits 150g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1cld4/160">1cld4/160</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Spelt Digestive Biscuits 150g">Seggiano Organic Spelt Digestive Biscuits 150g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.00">£3.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1BMR9/200">1BMR9/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Sea Salt & Chocolate biscotti 200g">Seggiano Sea Salt & Chocolate biscotti 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.90">£3.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1BMR10/200">1BMR10/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Double Chocolate Cantuccini 200g">Seggiano Double Chocolate Cantuccini 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.90">£3.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1BMR11/200">1BMR11/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate & Orange Cantuccini 200g">Seggiano Chocolate & Orange Cantuccini 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.90">£3.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr8/200">1bmr8/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Cantuccini Biscotti 200g">Seggiano Cantuccini Biscotti 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.90">£3.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr6/200">1bmr6/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate Saturnelle 200g">Seggiano Chocolate Saturnelle 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.90">£3.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr5/200">1bmr5/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Orange Walnut 200g">Seggiano Orange Walnut 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£3.90">£3.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr12/200">1bmr12/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Brutti ma Buoni Biscuits 180g">Seggiano Brutti ma Buoni Biscuits 180g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.50">£4.50</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr13/200">1bmr13/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Amaretti Soft Almond Biscuits 200g">Seggiano Amaretti Soft Almond Biscuits 200g</td>
+            <td><input type="hidden" name="unitPrice" value="£4.50">£4.50</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>CHRISTMAS & EASTER CAKES</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bli1/500">1bli1/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Classic Christmas Panettone 500g *">Seggiano Classic Christmas Panettone 500g *</td>
+            <td><input type="hidden" name="unitPrice" value="£10.10">£10.10</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bli4/500">1bli4/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Chestnut Panettone 500g *">Seggiano Chestnut Panettone 500g *</td>
+            <td><input type="hidden" name="unitPrice" value="£11.15">£11.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bli5/500">1bli5/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate Panettone 500g NEW">Seggiano Chocolate Panettone 500g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£11.40">£11.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bli6/500">1bli6/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Vegan Artisan Panettone 500g NEW">Seggiano Vegan Artisan Panettone 500g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£11.40">£11.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bli3/500">1bli3/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Limoncello Panettone 500g *">Seggiano Limoncello Panettone 500g *</td>
+            <td><input type="hidden" name="unitPrice" value="£11.40">£11.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5bbn2/450">5bbn2/450</td>
+            <td><input type="hidden" name="product" value="Bonci Panbriacone 500g *">Bonci Panbriacone 500g *</td>
+            <td><input type="hidden" name="unitPrice" value="£16.40">£16.40</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="5bbn3/750">5bbn3/750</td>
+            <td><input type="hidden" name="product" value="Bonci Panbriacone 850g *">Bonci Panbriacone 850g *</td>
+            <td><input type="hidden" name="unitPrice" value="£21.25">£21.25</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bli2/500">1bli2/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Colomba 500g *">Seggiano Colomba 500g *</td>
+            <td><input type="hidden" name="unitPrice" value="£12.85">£12.85</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bli8/500">1bli8/500</td>
+            <td><input type="hidden" name="product" value="Seggiano Vegan Colomba 500g NEW! *">Seggiano Vegan Colomba 500g NEW! *</td>
+            <td><input type="hidden" name="unitPrice" value="£12.85">£12.85</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>AFTER DINNER TREATS</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mmz1/100">1mmz1/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Ready To Eat Chestnuts 100g">Seggiano Ready To Eat Chestnuts 100g</td>
+            <td><input type="hidden" name="unitPrice" value="£1.90">£1.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="20.0">20</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr3/100">1bmr3/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Traditional Panforte 100g *">Seggiano Traditional Panforte 100g *</td>
+            <td><input type="hidden" name="unitPrice" value="£2.95">£2.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="30.0">30</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr4/400">1bmr4/400</td>
+            <td><input type="hidden" name="product" value="Seggiano Traditional Panforte 400g *">Seggiano Traditional Panforte 400g *</td>
+            <td><input type="hidden" name="unitPrice" value="£6.75">£6.75</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr1/100">1bmr1/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate Panforte 100g *">Seggiano Chocolate Panforte 100g *</td>
+            <td><input type="hidden" name="unitPrice" value="£2.95">£2.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="30.0">30</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr2/400">1bmr2/400</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate Panforte 400g *">Seggiano Chocolate Panforte 400g *</td>
+            <td><input type="hidden" name="unitPrice" value="£6.75">£6.75</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmr7/200">1bmr7/200</td>
+            <td><input type="hidden" name="product" value="Seggiano Fig & Walnut Panforte 200g *">Seggiano Fig & Walnut Panforte 200g *</td>
+            <td><input type="hidden" name="unitPrice" value="£4.15">£4.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>CHOCOLATE & FRUITS</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1bmfg1/100">1bmfg1/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate Grissini 100g NEW">Seggiano Chocolate Grissini 100g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£3.70">£3.70</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dmr1/80">1dmr1/80</td>
+            <td><input type="hidden" name="product" value="Seggiano Marzipan Maraschino Chocolate 80g NEW">Seggiano Marzipan Maraschino Chocolate 80g NEW</td>
+            <td><input type="hidden" name="unitPrice" value="£3.60">£3.60</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dga6/120">1dga6/120</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate Clementines 120g *">Seggiano Chocolate Clementines 120g *</td>
+            <td><input type="hidden" name="unitPrice" value="£5.50">£5.50</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dga7/140">1dga7/140</td>
+            <td><input type="hidden" name="product" value="Seggiano Heavenly Chocolate Cherry Figs 140g *">Seggiano Heavenly Chocolate Cherry Figs 140g *</td>
+            <td><input type="hidden" name="unitPrice" value="£5.50">£5.50</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dga8/120">1dga8/120</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate Rum Figs 120g *">Seggiano Chocolate Rum Figs 120g *</td>
+            <td><input type="hidden" name="unitPrice" value="£5.50">£5.50</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="12.0">12</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dga2/180">1dga2/180</td>
+            <td><input type="hidden" name="product" value="Seggiano Chocolate Fig Salame 180g *">Seggiano Chocolate Fig Salame 180g *</td>
+            <td><input type="hidden" name="unitPrice" value="£4.45">£4.45</td>
+            <td><input type="hidden" name="vat" value="nan">nan</td>
+            <td><input type="hidden" name="unitsPerCase" value="24.0">24</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>LIQUORICE</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dnm4/100">1dnm4/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Liquorice Spirals 100g">Seggiano Organic Liquorice Spirals 100g</td>
+            <td><input type="hidden" name="unitPrice" value="£1.30">£1.30</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="20.0">20</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dnm5/10">1dnm5/10</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Liquorice Tronchettini 10g in Tins">Seggiano Organic Liquorice Tronchettini 10g in Tins</td>
+            <td><input type="hidden" name="unitPrice" value="£0.99">£0.99</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="32.0">32</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dnm3/60">1dnm3/60</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Liquorice Rope 60g">Seggiano Organic Liquorice Rope 60g</td>
+            <td><input type="hidden" name="unitPrice" value="£1.25">£1.25</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="20.0">20</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1dnm2/100">1dnm2/100</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Liquorice Pebbles 100g">Seggiano Organic Liquorice Pebbles 100g</td>
+            <td><input type="hidden" name="unitPrice" value="£2.30">£2.30</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="20.0">20</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>ORGANIC SEMI-FRESH HERBS</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel1/18">1mel1/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Basil">Seggiano Organic Semi fresh herbs 18g- Basil</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel2/18">1mel2/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Mint">Seggiano Organic Semi fresh herbs 18g- Mint</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel3/18">1mel3/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Dill">Seggiano Organic Semi fresh herbs 18g- Dill</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel4/18">1mel4/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Coriander">Seggiano Organic Semi fresh herbs 18g- Coriander</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel5/18">1mel5/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Parsley">Seggiano Organic Semi fresh herbs 18g- Parsley</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel6/18">1mel6/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Thyme">Seggiano Organic Semi fresh herbs 18g- Thyme</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel7/18">1mel7/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Sage">Seggiano Organic Semi fresh herbs 18g- Sage</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel8/18">1mel8/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Rosemary">Seggiano Organic Semi fresh herbs 18g- Rosemary</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel9/18">1mel9/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Oregano">Seggiano Organic Semi fresh herbs 18g- Oregano</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="1mel10/18">1mel10/18</td>
+            <td><input type="hidden" name="product" value="Seggiano Organic Semi fresh herbs 18g- Italian Blend">Seggiano Organic Semi fresh herbs 18g- Italian Blend</td>
+            <td><input type="hidden" name="unitPrice" value="£2.15">£2.15</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="8.0">8</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>GIFT BOXES</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="4g10">4g10</td>
+            <td><input type="hidden" name="product" value="Italian Oil & Vinegar">Italian Oil & Vinegar</td>
+            <td><input type="hidden" name="unitPrice" value="£13.10">£13.10</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="4g11">4g11</td>
+            <td><input type="hidden" name="product" value="Balsamics for Cooks">Balsamics for Cooks</td>
+            <td><input type="hidden" name="unitPrice" value="£14.30">£14.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="4g12">4g12</td>
+            <td><input type="hidden" name="product" value="Chocolate Lovers">Chocolate Lovers</td>
+            <td><input type="hidden" name="unitPrice" value="£14.30">£14.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="4g1">4g1</td>
+            <td><input type="hidden" name="product" value="Savoury Gift Box *">Savoury Gift Box *</td>
+            <td><input type="hidden" name="unitPrice" value="£18.60">£18.60</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2o/5l">2o/5l</td>
+            <td><input type="hidden" name="product" value="Lunaio Organic Italian Extra Virgin Olive Oil 5L">Lunaio Organic Italian Extra Virgin Olive Oil 5L</td>
+            <td><input type="hidden" name="unitPrice" value="£79.90">£79.90</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2omi3/5l">2omi3/5l</td>
+            <td><input type="hidden" name="product" value="La Molazza Organic Calabrian Extra Virgin Olive Oil 5L">La Molazza Organic Calabrian Extra Virgin Olive Oil 5L</td>
+            <td><input type="hidden" name="unitPrice" value="£59.50">£59.50</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2slf1/1kg">2slf1/1kg</td>
+            <td><input type="hidden" name="product" value="Basil Genovese pesto 1kg">Basil Genovese pesto 1kg</td>
+            <td><input type="hidden" name="unitPrice" value="£14.50">£14.50</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2slf4/4kg">2slf4/4kg</td>
+            <td><input type="hidden" name="product" value="Basil Genovese Pesto 4kg">Basil Genovese Pesto 4kg</td>
+            <td><input type="hidden" name="unitPrice" value="£54.00">£54.00</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="2.0">2</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2tfa3/3.9kg">2tfa3/3.9kg</td>
+            <td><input type="hidden" name="product" value="Roasted Artichokes in Extra Virgin Olive Oil 3.9kg">Roasted Artichokes in Extra Virgin Olive Oil 3.9kg</td>
+            <td><input type="hidden" name="unitPrice" value="£59.95">£59.95</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="4.0">4</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="2tdc2/1kg">2tdc2/1kg</td>
+            <td><input type="hidden" name="product" value="Oven Roasted Tomatoes in evoo 1kg">Oven Roasted Tomatoes in evoo 1kg</td>
+            <td><input type="hidden" name="unitPrice" value="£17.30">£17.30</td>
+            <td><input type="hidden" name="vat" value="0%">0%</td>
+            <td><input type="hidden" name="unitsPerCase" value="6.0">6</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+<tr><td colspan='7' style='text-align:center; font-weight:bold;'>OLIVE WOOD CREATIONS</td></tr>
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="3ymc01">3ymc01</td>
+            <td><input type="hidden" name="product" value="Olive Wood Boards (price per Kg)">Olive Wood Boards (price per Kg)</td>
+            <td><input type="hidden" name="unitPrice" value="£14.60">£14.60</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="3ymc03">3ymc03</td>
+            <td><input type="hidden" name="product" value="Olive Wood Heart Board">Olive Wood Heart Board</td>
+            <td><input type="hidden" name="unitPrice" value="£15.30">£15.30</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="3ymc05">3ymc05</td>
+            <td><input type="hidden" name="product" value="Small Olive Wood Grater">Small Olive Wood Grater</td>
+            <td><input type="hidden" name="unitPrice" value="£7.35">£7.35</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="3ymc06">3ymc06</td>
+            <td><input type="hidden" name="product" value="Medium Olive Wood Grater">Medium Olive Wood Grater</td>
+            <td><input type="hidden" name="unitPrice" value="£10.15">£10.15</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="3ymc07">3ymc07</td>
+            <td><input type="hidden" name="product" value="Large Olive Wood Grater">Large Olive Wood Grater</td>
+            <td><input type="hidden" name="unitPrice" value="£12.45">£12.45</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
+
+        <tr>
+            <td><input type="hidden" name="productCode" value="3ymc08">3ymc08</td>
+            <td><input type="hidden" name="product" value="Olive Wood Pestle & Mortar">Olive Wood Pestle & Mortar</td>
+            <td><input type="hidden" name="unitPrice" value="£17.15">£17.15</td>
+            <td><input type="hidden" name="vat" value="20%">20%</td>
+            <td><input type="hidden" name="unitsPerCase" value="1.0">1</td>
+            <td><input type="number" name="quantity" placeholder="Enter quantity"></td>
+            <td>£0.00</td>
+        </tr>
+        
             </tbody>
             <tfoot>
                 <tr>
+                    <td colspan="5">Total Case Count</td>
+                    <td colspan="2" id="caseCountTotal">0</td>
+                </tr>
+                <tr>
                     <td colspan="5">Grand Total</td>
-                        <td colspan="2" id="grandTotal">£0.00</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </form>
-    </div>
+                    <td colspan="2" id="grandTotal">£0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <input type="submit" value="Submit Order">
+    </form>
 
-    <!-- The JavaScript should be placed here after all HTML content is loaded -->
+    <!-- JavaScript for calculating totals and case count -->
     <script>
-        // Make sure the script runs after the content is fully loaded
-        window.onload = function () {
-            document.getElementById("orderForm").addEventListener("input", function () {
-                let grandTotal = 0;
+        document.getElementById("orderForm").addEventListener("input", function () {
+            let grandTotal = 0;
+            let totalCases = 0;
+            
+            // Loop through each product row
+            document.querySelectorAll("tbody tr").forEach((row) => {
+                const qtyInput = row.querySelector('input[type="number"]');
+                const totalCell = row.querySelectorAll('td')[6]; // Total Cost column
+                
+                if (qtyInput && totalCell) {
+                    const qty = parseInt(qtyInput.value) || 0;
+                    const price = parseFloat(row.children[2].innerText.replace('£', '')) || 0;
+                    const vat = parseFloat(row.children[3].innerText.replace('%', '')) / 100 || 0;
+                    const unitsPerCase = parseInt(row.children[4].innerText) || 1;
+                    
+                    // Calculate total cost for the product
+                    const total = qty * unitsPerCase * price * (1 + vat);
+                    totalCell.innerText = `£${total.toFixed(2)}`;
+                    grandTotal += total;
 
-                // Loop through each product row
-                document.querySelectorAll("tbody tr").forEach((row) => {
-                    const qtyInput = row.querySelector('input[type="number"]');
-                    const totalCell = row.querySelectorAll('td')[6]; // Total Cost column is the 7th column (index 6)
-
-                    // Only calculate total for rows that contain quantity inputs and total cell
-                    if (qtyInput && totalCell) {
-                        const qty = parseInt(qtyInput.value) || 0;
-
-                        // Extract the price, VAT, and units per case from the row
-                        const price = parseFloat(row.children[2].innerText.replace('£', '')) || 0;
-                        const vat = parseFloat(row.children[3].innerText.replace('%', '')) / 100 || 0;
-                        const unitsPerCase = parseInt(row.children[4].innerText) || 1;
-
-                        // Correctly calculate the total for the product (Order Quantity * Units Per Case * Unit Price)
-                        const total = qty * unitsPerCase * price * (1 + vat);
-
-                        // Update the total cost cell in the row
-                        totalCell.innerText = `£${total.toFixed(2)}`;
-
-                        // Add to grand total
-                        grandTotal += total;
-                    }
-                });
-
-                // Update the grand total in the footer
-                document.getElementById("grandTotal").innerText = `£${grandTotal.toFixed(2)}`;
+                    // Add to the total case count
+                    totalCases += qty;
+                }
             });
-        };
+
+            // Update grand total and case count
+            document.getElementById("grandTotal").innerText = `£${grandTotal.toFixed(2)}`;
+            document.getElementById("caseCountTotal").innerText = totalCases;
+        });
     </script>
 </body>
 </html>
