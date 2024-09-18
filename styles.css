@@ -38,7 +38,7 @@ form {
 table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* Make table cells consistent */
+    table-layout: auto; /* Make table cells consistent */
 }
 
 thead {
