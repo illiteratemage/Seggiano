@@ -16,11 +16,12 @@ function calculateTotals() {
             const quantity = parseInt(quantityInput.value) || 0;
             const unitPrice = parseFloat(quantityInput.dataset.unitPrice) || 0;
             const unitsPerCase = parseFloat(quantityInput.dataset.unitsPerCase) || 1;
-            
-            // Correct calculation (quantity * unit price * units per case)
-            const totalCost = calculateRowTotal(quantity, unitPrice, unitsPerCase);
-            
-            totalCostCell.innerText = '£' + totalCost;
+        
+        // Add this to see what value is being read from the quantity input
+        console.log("Quantity:", quantity);
+
+        const totalCost = calculateRowTotal(quantity, unitPrice, unitsPerCase);
+        totalCostCell.innerText = '£' + totalCost;
             grandTotal += parseFloat(totalCost);
             caseCountTotal += quantity;
         }
