@@ -25,14 +25,18 @@ function calculateTotals() {
             caseCountTotal += quantity;
         }
     });
-    
-    // Update grand total and case count
+
+    // Debugging output to verify totals
+    console.log("Grand Total:", grandTotal);
+    console.log("Case Count Total:", caseCountTotal);
+
+    // Update the displayed totals
     document.getElementById('grandTotal').innerText = '£' + grandTotal.toFixed(2);
     document.getElementById('caseCountTotal').innerText = caseCountTotal;
 }
 
+// Trigger the calculation on input changes
 window.onload = function() {
-    // Event delegation (efficient for large tables)
     document.querySelector('tbody').addEventListener('input', function(e) {
         if (e.target.classList.contains('quantity')) {
             calculateTotals();
