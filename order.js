@@ -8,14 +8,14 @@ function calculateTotals() {
     let caseCountTotal = 0;
     const rows = document.querySelectorAll('tbody tr');
     
-    rows.forEach(row => {
-        const quantityInput = row.querySelector('.quantity');
-        const totalCostCell = row.querySelector('.total-cost');
+    const totalCostCell = row.querySelector('.total-cost');
         
-        if (quantityInput && totalCostCell) {
-            const quantity = parseInt(quantityInput.value) || 0;
-            const unitPrice = parseFloat(quantityInput.dataset.unitPrice) || 0;
-            const unitsPerCase = parseFloat(quantityInput.dataset.unitsPerCase) || 1;
+        // Skip rows that don't have a quantity input or total cost cell (like subheaders)
+        if (!quantityInput || !totalCostCell) {
+            return; // Skip this row and move to the next one
+        }
+        
+        const quantity = parseInt(quantityInput.value) || 0;
         
         // Add this to see what value is being read from the quantity input
         console.log("Quantity:", quantity);
