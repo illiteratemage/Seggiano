@@ -10,29 +10,28 @@ function calculateTotals() {
     const rows = document.querySelectorAll('tbody tr');
     
     rows.forEach(row => {
-        const quantityInput = row.querySelector('.quantity');
-        const totalCostCell = row.querySelector('.total-cost');
+    const quantityInput = row.querySelector('.quantity');
+    const totalCostCell = row.querySelector('.total-cost');
 
-        // Skip rows without quantity inputs or total cost cells (such as subheaders)
-        if (!quantityInput || !totalCostCell) {
-            return; // Skip to the next row
-        }
+    if (!quantityInput || !totalCostCell) {
+        return; // Skip this row
+    }
 
-        // Get the quantity entered by the user
-        const quantity = parseInt(quantityInput.value) || 0;
-        const unitPrice = parseFloat(quantityInput.dataset.unitPrice) || 0;
-        const unitsPerCase = parseFloat(quantityInput.dataset.unitsPerCase) || 1; // Default to 1 if missing
+    // Log the row and quantity value for debugging
+    console.log("Row being processed:", row);
+    const quantity = parseInt(quantityInput.value) || 0;
+    console.log("Quantity:", quantity);
 
-        // Calculate total cost for this row
-        const totalCost = calculateRowTotal(quantity, unitPrice, unitsPerCase);
-        totalCostCell.innerText = '£' + totalCost;
+    const unitPrice = parseFloat(quantityInput.dataset.unitPrice) || 0;
+    const unitsPerCase = parseFloat(quantityInput.dataset.unitsPerCase) || 1;
 
-        // Add to grand total
-        grandTotal += parseFloat(totalCost);
+    // Calculate total cost for this row
+    const totalCost = calculateRowTotal(quantity, unitPrice, unitsPerCase);
+    totalCostCell.innerText = '£' + totalCost;
 
-        // Simply add the quantity to case count total (since each quantity = 1 case)
-        caseCountTotal += quantity;
-    });
+    grandTotal += parseFloat(totalCost);
+    caseCountTotal += quantity; // This is the case count being summed
+});
 
     // Debugging output to verify totals
     console.log("Grand Total:", grandTotal);
