@@ -49,4 +49,61 @@ window.onload = function() {
             calculateTotals();
         }
     });
+
+// New form submission code (added at the end to prevent conflict)
+document.getElementById('orderForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Construct the products array
+    let products = [];
+    const rows = document.querySelectorAll('tbody tr');
+
+    rows.forEach(row => {
+        const productCode = row.querySelector('input[name="productCode"]').value;
+        const productName = row.querySelector('input[name="product"]').value;
+        const unitPrice = row.querySelector('input[name="unitPrice"]').value;
+        const vat = row.querySelector('input[name="vat"]').value;
+        const quantity = row.querySelector('.quantity').value;
+
+        // Only include products with quantities greater than 0
+        if (quantity > 0) {
+            const totalCost = (quantity * unitPrice).toFixed(2);
+            products.push({
+                productCode: productCode,
+                product: productName,
+                unitPrice: parseFloat(unitPrice),
+                vat: vat,
+                quantity: parseInt(quantity),
+                totalCost: totalCost
+            });
+        }
+    });
+
+    // Construct the JSON payload
+    const formData = {
+        products: products,
+        caseCountTotal: products.length, // Assuming each row is 1 case
+        grandTotal: products.reduce((sum, product) => sum + parseFloat(product.totalCost), 0)
+    };
+
+    // Send the data as JSON to your Google Apps Script
+    fetch('https://script.google.com/macros/s/AKfycbzwIvfhB0bfwWsGAllft11iv9n-1eYVB4gL8aDBEEdW_h0S_iD2qwE1anOYNMzGa7eEMw/exec', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData) // Convert the formData object to JSON
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.result === 'success') {
+            alert('Order submitted successfully!');
+        } else {
+            alert('Error: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
 };
