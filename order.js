@@ -59,42 +59,59 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
     const rows = document.querySelectorAll('tbody tr');
 
     rows.forEach(row => {
-        const productCode = row.querySelector('input[name="productCode"]').value;
-        const productName = row.querySelector('input[name="product"]').value;
-        const unitPrice = row.querySelector('input[name="unitPrice"]').value;
-        const vat = row.querySelector('input[name="vat"]').value;
-        const quantity = row.querySelector('.quantity').value;
+        const productCodeElement = row.querySelector('input[name="productCode[]"]');
+        const productNameElement = row.querySelector('input[name="product[]"]');
+        const unitPriceElement = row.querySelector('input[name="unitPrice[]"]');
+        const vatElement = row.querySelector('input[name="vat[]"]');
+        const quantityElement = row.querySelector('.quantity');
 
-        // Only include products with quantities greater than 0
-        if (quantity > 0) {
-            const totalCost = (quantity * unitPrice).toFixed(2);
-            products.push({
-                productCode: productCode,
-                product: productName,
-                unitPrice: parseFloat(unitPrice),
-                vat: vat,
-                quantity: parseInt(quantity),
-                totalCost: totalCost
-            });
+        // Only process the row if all required elements exist
+        if (productCodeElement && productNameElement && unitPriceElement && vatElement && quantityElement) {
+            const productCode = productCodeElement.value;
+            const productName = productNameElement.value;
+            const unitPrice = parseFloat(unitPriceElement.value.replace('£', ''));
+            const vat = parseFloat(vatElement.value.replace('%', '')) / 100;
+            const quantity = parseInt(quantityElement.value) || 0;
+
+            // Only include products with quantities greater than 0
+            if (quantity > 0) {
+                const totalCost = (quantity * unitPrice * (1 + vat)).toFixed(2);
+                products.push({
+                    productCode: productCode,
+                    product: productName,
+                    unitPrice: unitPrice,
+                    vat: vat * 100, // Keep VAT as a percentage
+                    quantity: quantity,
+                    totalCost: totalCost
+                });
+            }
         }
     });
 
     // Construct the JSON payload
     const formData = {
         products: products,
-        caseCountTotal: products.length, // Assuming each row is 1 case
+        caseCountTotal: products.reduce((sum, product) => sum + product.quantity, 0),
         grandTotal: products.reduce((sum, product) => sum + parseFloat(product.totalCost), 0)
     };
 
+    // Log formData to the console for debugging
+    console.log('Form data being submitted:', formData);
+
     // Send the data as JSON to your Google Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbzwIvfhB0bfwWsGAllft11iv9n-1eYVB4gL8aDBEEdW_h0S_iD2qwE1anOYNMzGa7eEMw/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxdLnsijZpiHfnf1FMPSMZrOxGyGM0WpH4H9XkUI-c_FdFhyTAOuU_0eDFnAkE8afGSHw/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData) // Convert the formData object to JSON
+        body: JSON.stringify(formData) // Send JSON data to the backend
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
     .then(data => {
         if (data.result === 'success') {
             alert('Order submitted successfully!');
@@ -103,7 +120,7 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
         }
     })
     .catch(error => {
-        console.error('Error:', error);
+        console.error('There was a problem with the fetch operation:', error);
+        alert('Error submitting order: ' + error.message);
     });
 });
-};
