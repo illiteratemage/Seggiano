@@ -99,7 +99,7 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
     console.log('Form data being submitted:', formData);
 
     // Send the data as JSON to your Google Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbzb7qORQ2p8O8fq1v8vMOudmho4-auNifnTSS8ZVs-EMnKqmVj8jSdZ0U1_KVEvpa0UHQ/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbySxdoZI8iRPhwibnTVg3A1vuJZmVuoHdWOSPJLnb_FYkJlAgT0P9jJd08XCRVMIec4/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
