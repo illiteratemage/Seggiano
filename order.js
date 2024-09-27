@@ -81,7 +81,7 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
     });
 
     // Send the FormData using fetch
-    fetch('https://script.google.com/macros/s/AKfycbyvQkQjHwD9SYfPIcgWrPTsFCsNJbsShd4g07aWwnSUtwa_u2KGEQh3pPl8priquryKvA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyGhgGHn9z4-B3Zh_PMpRPzTwBUN_CYPPamP4FeXpG_MUzvnY5ylS-YjLVjmzImr9CrSw/exec', {
         method: 'POST',
         body: formData
     })
