@@ -54,64 +54,38 @@ window.onload = function() {
 document.getElementById('orderForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
 
-    // Construct the products array
-    let products = [];
-    const rows = document.querySelectorAll('tbody tr');
+    // Create a new FormData object
+    const formData = new FormData();
 
-    rows.forEach(row => {
-        const productCodeElement = row.querySelector('input[name="productCode[]"]');
-        const productNameElement = row.querySelector('input[name="product[]"]');
-        const unitPriceElement = row.querySelector('input[name="unitPrice[]"]');
-        const vatElement = row.querySelector('input[name="vat[]"]');
-        const quantityElement = row.querySelector('.quantity');
+    // Loop through each product row and append fields to FormData
+    document.querySelectorAll("tbody tr").forEach(row => {
+        const productCode = row.querySelector('input[name="productCode[]"]').value;
+        const productName = row.querySelector('input[name="product[]"]').value;
+        const unitPrice = parseFloat(row.querySelector('input[name="unitPrice[]"]').value.replace('£', ''));
+        const vat = parseFloat(row.querySelector('input[name="vat[]"]').value.replace('%', '')) / 100;
+        const quantity = parseInt(row.querySelector('.quantity').value) || 0;
 
-        // Only process the row if all required elements exist
-        if (productCodeElement && productNameElement && unitPriceElement && vatElement && quantityElement) {
-            const productCode = productCodeElement.value;
-            const productName = productNameElement.value;
-            const unitPrice = parseFloat(unitPriceElement.value.replace('£', ''));
-            const vat = parseFloat(vatElement.value.replace('%', '')) / 100;
-            const quantity = parseInt(quantityElement.value) || 0;
+        // Only calculate totalCost and append data if quantity is greater than 0
+        if (quantity > 0) {
+            // Calculate total cost for this row
+            const totalCost = (quantity * unitPrice * (1 + vat)).toFixed(2);
 
-            // Only include products with quantities greater than 0
-            if (quantity > 0) {
-                const totalCost = (quantity * unitPrice * (1 + vat)).toFixed(2);
-                products.push({
-                    productCode: productCode,
-                    product: productName,
-                    unitPrice: unitPrice,
-                    vat: vat * 100, // Keep VAT as a percentage
-                    quantity: quantity,
-                    totalCost: totalCost
-                });
-            }
+            // Append fields to FormData
+            formData.append('productCode[]', productCode);
+            formData.append('product[]', productName);
+            formData.append('unitPrice[]', unitPrice);
+            formData.append('vat[]', vat);
+            formData.append('quantity[]', quantity);
+            formData.append('totalCost[]', totalCost); // Append total cost
         }
     });
 
-    // Construct the JSON payload
-    const formData = {
-        products: products,
-        caseCountTotal: products.reduce((sum, product) => sum + product.quantity, 0),
-        grandTotal: products.reduce((sum, product) => sum + parseFloat(product.totalCost), 0)
-    };
-
-    // Log formData to the console for debugging
-    console.log('Form data being submitted:', formData);
-
-    // Send the data as JSON to your Google Apps Script
+    // Send the FormData using fetch
     fetch('https://script.google.com/macros/s/AKfycbyvQkQjHwD9SYfPIcgWrPTsFCsNJbsShd4g07aWwnSUtwa_u2KGEQh3pPl8priquryKvA/exec', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData) // Send JSON data to the backend
+        body: formData
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
         if (data.result === 'success') {
             alert('Order submitted successfully!');
